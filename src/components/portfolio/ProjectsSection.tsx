@@ -6,6 +6,16 @@ import { ExternalLink, Github } from "lucide-react";
 const ProjectsSection = () => {
   const projects = [
     {
+      title: "DeLARSify",
+      description: "AI-powered survivorship platform designed to help patients manage Low Anterior Resection Syndrome (LARS) after rectal cancer surgery. Combines gut microbiome data, patient-reported outcomes, and wearable data through a governance-first AI engine to deliver personalized recommendations and predictive insights.",
+      tags: ["AI/ML", "Healthcare", "Patent Pending", "Survivorship Platform"],
+      status: "Patent Pending",
+      impact: "U.S. Provisional Application No. 63/774,518",
+      duration: "March 2025",
+      organization: "Independent Project",
+      website: "https://delarsify.netlify.app/"
+    },
+    {
       title: "Cancer Research - Oxaliplatin-Induced Peripheral Neuropathy",
       description: "Conducted colorectal cancer research on oxaliplatin-induced peripheral neuropathy with findings published at ASCO. Applied single-cell analysis for PDAC, identifying potential therapeutic targets for pancreatic cancer treatment.",
       tags: ["Bioinformatics", "Cancer Research", "Single-cell Analysis", "PDAC"],
@@ -61,6 +71,17 @@ const ProjectsSection = () => {
                 <span className="font-medium">Impact:</span>
                 <span className="text-accent font-medium">{project.impact}</span>
               </div>
+              {project.website && (
+                <Button 
+                  variant="outline" 
+                  size="sm" 
+                  className="w-full mt-3"
+                  onClick={() => window.open(project.website, '_blank')}
+                >
+                  <ExternalLink className="h-4 w-4 mr-2" />
+                  Visit Project
+                </Button>
+              )}
             </div>
           </ContentCard>
         ))}
