@@ -1,5 +1,6 @@
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { Button } from "@/components/ui/button";
+import { Menu } from "lucide-react";
 import { PortfolioSidebar } from "@/components/portfolio/PortfolioSidebar";
 import HeroSection from "@/components/portfolio/HeroSection";
 import AboutSection from "@/components/portfolio/AboutSection";
@@ -24,9 +25,11 @@ const Index = () => {
 
         {/* Main Content */}
         <main className="flex-1 overflow-y-auto">
-          {/* Sidebar Toggle */}
-          <div className="fixed top-4 right-4 z-50 lg:hidden">
-            <SidebarTrigger className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg w-12 h-12 rounded-full" />
+          {/* Sidebar Toggle - Mobile */}
+          <div className="fixed top-4 left-4 z-50 lg:hidden">
+            <SidebarTrigger className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg w-12 h-12 rounded-full flex items-center justify-center">
+              <Menu className="w-6 h-6" />
+            </SidebarTrigger>
           </div>
 
           {/* Book a Call Button - Left side next to sidebar (desktop) */}
@@ -41,13 +44,13 @@ const Index = () => {
             </Button>
           </div>
 
-          {/* Book a Call Button - Mobile */}
-          <div className="fixed top-20 left-4 z-50 lg:hidden">
+          {/* Book a Call Button - Mobile (floating bottom right) */}
+          <div className="fixed bottom-6 right-6 z-50 lg:hidden">
             <Button
-              size="sm"
+              size="lg"
               variant="default"
               onClick={() => window.open('https://topmate.io/suneetamodekurty/', '_blank')}
-              className="shadow-lg"
+              className="shadow-lg rounded-full px-6 py-3 text-sm font-semibold"
             >
               Book a Call
             </Button>
