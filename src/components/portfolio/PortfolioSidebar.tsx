@@ -12,7 +12,8 @@ import {
   Mail,
   Linkedin,
   Github,
-  Home
+  Home,
+  Shield
 } from "lucide-react";
 import smLogo from "@/assets/sm-logo.png";
 
@@ -40,6 +41,7 @@ const portfolioSections = [
   { id: "certifications", title: "Certifications", icon: Award },
   { id: "projects", title: "Projects", icon: BookOpen },
   { id: "publications", title: "Publications", icon: FileText },
+  { id: "training", title: "Training", icon: Shield },
   { id: "books", title: "Books", icon: PenTool },
   { id: "achievements", title: "Awards", icon: Trophy },
   { id: "newsletter", title: "NewsLetter", icon: PenTool },
@@ -87,7 +89,7 @@ export function PortfolioSidebar() {
             {!isCollapsed && (
               <div>
                 <h3 className="font-bold text-lg text-sidebar-foreground">Suneeta Modekurty</h3>
-                <p className="text-sm text-sidebar-foreground/70">Technology Leader</p>
+                <p className="text-sm text-sidebar-foreground/70">AI Governance Expert</p>
               </div>
             )}
           </div>

@@ -17,7 +17,7 @@ const AboutSection = () => {
           </p>
           
           <p className="text-lg leading-relaxed text-muted-foreground">
-            As Founder and CEO of Sanjeevani AI, she has built two AI platforms addressing critical gaps.
+            As Founder and CEO of <a href="https://sanjeevaniai.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Sanjeevani AI</a>, she has built two AI platforms addressing critical gaps.
           </p>
           
           <p className="text-lg leading-relaxed text-muted-foreground">

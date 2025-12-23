@@ -37,7 +37,10 @@ const HeroSection = () => {
               text="Suneeta Modekurty" 
               className="block font-bold mb-4 signature-animation"
             />
-            <span className="block text-2xl md:text-3xl text-muted-foreground mb-6">Quantifying AI Governance Risk</span>
+            <div className="block text-xl md:text-2xl text-muted-foreground mb-6 space-y-2">
+              <div>AI Governance Expert</div>
+              <div className="text-base md:text-lg text-muted-foreground/80">ISO 42001 Lead Auditor · Founder, <a href="https://sanjeevaniai.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Sanjeevani AI</a> · O-1A Visa Holder</div>
+            </div>
           </h1>
           
           <div className="flex justify-center">
@@ -47,7 +50,7 @@ const HeroSection = () => {
               onClick={() => window.open('https://sanjeevaniai.com', '_blank')}
               className="group"
             >
-              See What I'm Building
+              Visit SANJEEVANI AI
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
