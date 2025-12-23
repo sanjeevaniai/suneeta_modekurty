@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { ChevronDown, Mail, Linkedin, Github, Sparkles } from "lucide-react";
+import { ChevronDown, Mail, Linkedin, Github, Sparkles, ArrowRight } from "lucide-react";
 import smLogo from "@/assets/sm-logo.png";
 import SignatureAnimation from "./SignatureAnimation";
 
@@ -37,8 +37,20 @@ const HeroSection = () => {
               text="Suneeta Modekurty" 
               className="block font-bold mb-4 signature-animation"
             />
-            <span className="block text-2xl md:text-3xl text-muted-foreground">Quantifying AI Governance Risk</span>
+            <span className="block text-2xl md:text-3xl text-muted-foreground mb-6">Quantifying AI Governance Risk</span>
           </h1>
+          
+          <div className="flex justify-center">
+            <Button
+              size="lg"
+              variant="default"
+              onClick={() => window.open('https://sanjeevaniai.com', '_blank')}
+              className="group"
+            >
+              See What I'm Building
+              <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
+            </Button>
+          </div>
           
         </div>
 
