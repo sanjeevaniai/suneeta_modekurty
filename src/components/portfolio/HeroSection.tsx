@@ -39,7 +39,7 @@ const HeroSection = () => {
             />
             <div className="block text-xl md:text-2xl text-muted-foreground mb-6 space-y-2">
               <div>AI Governance Expert</div>
-              <div className="text-base md:text-lg text-muted-foreground/80">ISO 42001 Lead Auditor · Founder, <a href="https://sanjeevaniai.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Sanjeevani AI</a> · O-1A Visa Holder</div>
+              <div className="text-base md:text-lg text-muted-foreground/80">ISO 42001 Lead Auditor · Founder, <a href="https://sanjeevaniai.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">SANJEEVANI AI</a> · O-1A Visa Holder</div>
             </div>
           </h1>
           

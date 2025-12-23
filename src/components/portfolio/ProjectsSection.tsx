@@ -12,7 +12,7 @@ const ProjectsSection = () => {
       status: "Production",
       impact: "1,500+ assessments, 73% time reduction vs manual review",
       duration: "Aug 2025 - Present",
-      organization: "Sanjeevani AI",
+      organization: "SANJEEVANI AI",
       website: "https://sanjeevaniai.com"
     },
     {

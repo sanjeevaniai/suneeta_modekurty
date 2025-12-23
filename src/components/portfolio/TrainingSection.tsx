@@ -84,7 +84,7 @@ const TrainingSection = () => {
                   <p>• ISO/IEC 42001 Lead Auditor (fewer than 500 worldwide)</p>
                   <p>• O-1A Visa for Extraordinary Ability in AI/ML</p>
                   <p>• 25 years in regulated industries (healthcare, fintech, life sciences)</p>
-                  <p>• Founder & CEO, <a href="https://sanjeevaniai.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Sanjeevani AI</a></p>
+                  <p>• Founder & CEO, <a href="https://sanjeevaniai.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">SANJEEVANI AI</a></p>
                   <p>• Builder of METRIS and DeLARSify</p>
                 </div>
               </div>

@@ -6,7 +6,7 @@ const JourneySection = () => {
     {
       year: "2025",
       title: "Founder & AI Governance Expert",
-      description: "Founder and CEO of Sanjeevani AI. Built METRIS, the first platform to quantify AI governance risk in dollars, with 1,500+ assessments across 50+ jurisdictions. Built DeLARSify, a multi-modal AI platform for cancer patients with LARS. Obtained ISO/IEC 42001 Lead Auditor certification. Selected for Washington University CELect-STL program. Accepted into Founder Institute Core. Delivering AI Governance Awareness and Literacy Training for enterprises preparing for EU AI Act compliance.",
+      description: "Founder and CEO of SANJEEVANI AI. Built METRIS, the first platform to quantify AI governance risk in dollars, with 1,500+ assessments across 50+ jurisdictions. Built DeLARSify, a multi-modal AI platform for cancer patients with LARS. Obtained ISO/IEC 42001 Lead Auditor certification. Selected for Washington University CELect-STL program. Accepted into Founder Institute Core. Delivering AI Governance Awareness and Literacy Training for enterprises preparing for EU AI Act compliance.",
       highlight: true
     },
     {
