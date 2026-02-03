@@ -97,7 +97,7 @@ const TrainingSection = () => {
           <Button
             size="lg"
             variant="default"
-            onClick={() => window.open('https://topmate.io/suneetamodekurty/', '_blank')}
+            onClick={() => window.open('https://calendar.notion.so/meet/siaai/0619', '_blank')}
             className="group"
           >
             Book a Call
