@@ -7,13 +7,13 @@ const AboutSection = () => {
     <Section
       id="about"
       title="About Me"
-      subtitle="AI governance expert, healthcare AI innovator, and cancer researcher"
+      subtitle="Pioneering Quantitative AI Governance, healthcare AI innovator, and cancer researcher"
     >
       <div className="space-y-8">
         {/* Main About Me Content */}
         <div className="space-y-6">
           <p className="text-lg leading-relaxed text-muted-foreground">
-            Suneeta Modekurty is an AI governance expert, healthcare AI innovator, and cancer researcher. Her work spans the development of AI systems to the frameworks that govern them responsibly.
+            Suneeta Modekurty is Pioneering Quantitative AI Governance, healthcare AI innovator, and cancer researcher. Her work spans the development of AI systems to the frameworks that govern them responsibly.
           </p>
           
           <p className="text-lg leading-relaxed text-muted-foreground">
@@ -37,7 +37,7 @@ const AboutSection = () => {
           </p>
           
           <p className="text-lg leading-relaxed text-muted-foreground">
-            Beyond building platforms, she delivers AI Governance Awareness and Literacy Training for enterprises navigating EU AI Act compliance, helping organizations build internal capability before the August 2026 enforcement deadline.
+            Beyond building platforms, she delivers Quantitative AI Governance Awareness and Literacy Training for enterprises navigating EU AI Act compliance, helping organizations build internal capability before the August 2026 enforcement deadline.
           </p>
           
           <p className="text-lg leading-relaxed text-muted-foreground">
@@ -45,7 +45,7 @@ const AboutSection = () => {
           </p>
           
           <p className="text-lg leading-relaxed text-muted-foreground">
-            She is currently developing an O'Reilly book titled <em>Quantitative Governance as Code</em> and speaks on AI governance at international conferences.
+            She is currently developing a book titled <em>Quantitative Governance as Code</em> and aspires to speak on Quantitative AI governance at international conferences.
           </p>
         </div>
 
