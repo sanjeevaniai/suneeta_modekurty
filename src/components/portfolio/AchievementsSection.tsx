@@ -30,6 +30,38 @@ const AchievementsSection = () => {
           description: "Recognized for significant impact in Responsible AI and thought leadership in ethical AI development and implementation."
         }
       ]
+    },
+    {
+      category: "Publications & Research",
+      icon: <Star className="w-8 h-8" />,
+      color: "text-green-500",
+      awards: [
+        {
+          title: "ASCO Publication",
+          organization: "American Society of Clinical Oncology",
+          year: "2024",
+          description: "Abstract accepted at the American Society of Clinical Oncology Annual Meeting for research on molecular insights into oxaliplatin-induced peripheral neuropathy in colorectal cancer."
+        },
+        {
+          title: "Author – The AI-Human Synergy",
+          organization: "Amazon",
+          year: "2024",
+          description: "Published 'The AI-Human Synergy: A Data Scientist's Vision for the Future' — exploring how artificial intelligence and human intelligence can work together."
+        }
+      ]
+    },
+    {
+      category: "Training & Education",
+      icon: <Medal className="w-8 h-8" />,
+      color: "text-purple-500",
+      awards: [
+        {
+          title: "O'Reilly Media Approved Live Training Instructor",
+          organization: "O'Reilly Media",
+          year: "2026",
+          description: "Approved live training instructor with a nationally listed course on AI Governance and Trust Scoring scheduled for June 2026."
+        }
+      ]
     }
   ];
 
@@ -39,7 +71,7 @@ const AchievementsSection = () => {
       title="Achievements & Awards" 
       subtitle="Recognition for excellence, innovation, and impact"
     >
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
         {achievements.map((category, index) => (
           <Card key={index} className="shadow-card border-0 hover:shadow-elegant transition-smooth">
             <CardHeader>

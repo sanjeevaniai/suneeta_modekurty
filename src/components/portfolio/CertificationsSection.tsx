@@ -6,6 +6,13 @@ import { Shield, Star, Award } from "lucide-react";
 const CertificationsSection = () => {
   const certifications = [
     {
+      category: "AI Governance & Auditing",
+      icon: <Shield className="w-6 h-6" />,
+      certs: [
+        "ISO/IEC 42001 Lead Auditor – AI Management Systems (International Standard for AI Governance)"
+      ]
+    },
+    {
       category: "AI & Data Science",
       icon: <Shield className="w-6 h-6" />,
       certs: [
@@ -41,7 +48,7 @@ const CertificationsSection = () => {
       title="Certifications" 
       subtitle="Professional credentials and continuous skill development"
     >
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         {certifications.map((category, index) => (
           <Card key={index} className="shadow-card border-0 hover:shadow-elegant transition-smooth">
             <CardHeader>

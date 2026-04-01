@@ -25,7 +25,7 @@ const HeroSection = () => {
           {/* Profile Image */}
           <div className="mt-12 mb-8 flex justify-center">
             <Avatar className="w-32 h-32 md:w-40 md:h-40 border-4 border-primary/20 shadow-elegant">
-              <AvatarImage src="/Suneeta.jpeg" alt="Suneeta Modekurty" className="object-cover" style={{ objectPosition: 'center 35%' }} />
+              <AvatarImage src="/Suneeta-new.png" alt="Suneeta Modekurty" className="object-cover" style={{ objectPosition: 'center 35%' }} />
               <AvatarFallback className="flex items-center justify-center bg-primary/10">
                 <img src={smLogo} alt="SM Logo" className="w-16 h-16 md:w-20 md:h-20 object-contain" />
               </AvatarFallback>
@@ -38,7 +38,7 @@ const HeroSection = () => {
               className="block font-bold mb-4 signature-animation"
             />
             <div className="block text-xl md:text-2xl text-muted-foreground mb-6 space-y-2">
-              <div>Pioneering Quantitative AI Governance</div>
+              <div>AI Consultant | LLM Fine-Tuning & RAG Systems | AI Governance & Responsible Innovation</div>
               <div className="text-base md:text-lg text-muted-foreground/80">ISO 42001 Lead Auditor · Founder, <a href="https://sanjeevaniai.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">SANJEEVANI AI</a> · O-1A Visa Holder</div>
             </div>
           </h1>
@@ -50,7 +50,7 @@ const HeroSection = () => {
               onClick={() => window.open('https://sanjeevaniai.com', '_blank')}
               className="group"
             >
-              Visit SANJEEVANI AI
+              Learn. Understand. Evaluate. Embrace. Score. Monitor. Repeat.
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>

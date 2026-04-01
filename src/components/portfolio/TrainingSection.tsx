@@ -75,7 +75,7 @@ const TrainingSection = () => {
             <h3 className="text-2xl font-semibold mb-6 text-center text-foreground">Instructor</h3>
             <div className="flex flex-col md:flex-row gap-6 items-center">
               <Avatar className="w-24 h-24 border-4 border-primary/20 shadow-elegant">
-                <AvatarImage src="/Suneeta.jpeg" alt="Suneeta Modekurty" className="object-cover" style={{ objectPosition: 'center 35%' }} />
+                <AvatarImage src="/Suneeta-new.png" alt="Suneeta Modekurty" className="object-cover" style={{ objectPosition: 'center 35%' }} />
                 <AvatarFallback>SM</AvatarFallback>
               </Avatar>
               <div className="flex-1 text-center md:text-left">

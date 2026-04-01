@@ -13,9 +13,13 @@ const AboutSection = () => {
         {/* Main About Me Content */}
         <div className="space-y-6">
           <p className="text-lg leading-relaxed text-muted-foreground">
-            Suneeta Modekurty is Pioneering Quantitative AI Governance, healthcare AI innovator, and cancer researcher. Her work spans the development of AI systems to the frameworks that govern them responsibly.
+            Suneeta Modekurty is an Applied GenAI Consultant & Governance Strategist specializing in LLM fine-tuning (LoRA/QLoRA, PEFT), Retrieval-Augmented Generation (RAG), and multi-agent AI systems. She is a Pioneering Quantitative AI Governance leader, healthcare AI innovator, and cancer researcher. Her work spans the development of AI systems to the frameworks that govern them responsibly.
           </p>
-          
+
+          <p className="text-lg leading-relaxed text-muted-foreground">
+            Experienced in deploying advanced AI in compliance-heavy industries including healthcare, public sector, and finance, with proven ROI exceeding $500M. Recognized with the O-1A Extraordinary Ability Visa and an AI Thought Leadership Award, she bridges deep technical expertise with Responsible AI governance, explainability (XAI), and regulatory alignment across frameworks such as NIST AI RMF, HIPAA, GDPR, CPRA, and DSPM.
+          </p>
+
           <p className="text-lg leading-relaxed text-muted-foreground">
             As Founder and CEO of <a href="https://sanjeevaniai.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">SANJEEVANI AI</a>, she has built two AI platforms addressing critical gaps.
           </p>
@@ -37,7 +41,7 @@ const AboutSection = () => {
           </p>
           
           <p className="text-lg leading-relaxed text-muted-foreground">
-            Beyond building platforms, she delivers Quantitative AI Governance Awareness and Literacy Training for enterprises navigating EU AI Act compliance, helping organizations build internal capability before the August 2026 enforcement deadline.
+            Beyond building platforms, she delivers Quantitative AI Governance Awareness and Literacy Training for enterprises navigating EU AI Act compliance, helping organizations build internal capability before the August 2026 enforcement deadline. She is an approved O'Reilly Media live training instructor, with a nationally listed course on AI governance and trust scoring scheduled for June 2026.
           </p>
           
           <p className="text-lg leading-relaxed text-muted-foreground">

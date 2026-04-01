@@ -17,7 +17,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-3">
                 <MapPin className="w-5 h-5" />
-                <span>Missouri, MO</span>
+                <span>Chesterfield, MO</span>
               </div>
             </div>
             
@@ -80,10 +80,11 @@ const Footer = () => {
           <div className="space-y-6">
             <h3 className="text-2xl font-bold">Professional Focus</h3>
             <div className="space-y-4 text-sm opacity-90">
-              <p>• Technology Leadership & Innovation</p>
-              <p>• AI Ethics & Responsible Development</p>
-              <p>• Quantum Computing Research</p>
-              <p>• Digital Transformation Strategy</p>
+              <p>• AI Governance & Responsible Innovation</p>
+              <p>• LLM Fine-Tuning (LoRA/QLoRA, PEFT)</p>
+              <p>• Retrieval-Augmented Generation (RAG)</p>
+              <p>• Multi-Agent AI Systems</p>
+              <p>• MLOps & Deployment</p>
               <p>• Academic Research & Publications</p>
               <p>• Thought Leadership & Speaking</p>
             </div>
@@ -93,7 +94,7 @@ const Footer = () => {
         <Separator className="my-12 bg-white/20" />
         
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm opacity-75">
-          <p>&copy; 2024 Suneeta Modekurty. All rights reserved.</p>
+          <p>&copy; 2025 Suneeta Modekurty. All rights reserved.</p>
           <div className="flex gap-6">
             <Button variant="ghost-hero" className="p-0 h-auto font-normal">
               Privacy Policy

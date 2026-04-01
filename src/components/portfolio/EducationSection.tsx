@@ -16,10 +16,22 @@ const education = [
       description: "Graduate studies in psychology providing foundation for understanding human behavior and decision-making."
     },
     {
-      degree: "MS Analytical Chemistry & B.Sc. Chemistry",
-      institution: "Universities in India",
+      degree: "MS Analytical Chemistry",
+      institution: "University in India",
       date: "Previous",
-      description: "Strong analytical and research foundation in chemistry with laboratory experience and quantitative analysis."
+      description: "Advanced analytical and research foundation in chemistry with laboratory experience and quantitative analysis."
+    },
+    {
+      degree: "B.Ed. (Bachelor of Education)",
+      institution: "University in India",
+      date: "Previous",
+      description: "Professional teaching qualification providing pedagogical skills and instructional design expertise."
+    },
+    {
+      degree: "B.Sc. Chemistry",
+      institution: "University in India",
+      date: "Previous",
+      description: "Undergraduate studies in chemistry with a strong foundation in scientific research methodology."
     }
   ];
 

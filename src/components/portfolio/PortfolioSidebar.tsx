@@ -12,6 +12,7 @@ import {
   Mail,
   Linkedin,
   Github,
+  Twitter,
   Home,
   Shield
 } from "lucide-react";
@@ -41,7 +42,7 @@ const portfolioSections = [
   { id: "certifications", title: "Certifications", icon: Award },
   { id: "projects", title: "Projects", icon: BookOpen },
   { id: "publications", title: "Publications", icon: FileText },
-  { id: "training", title: "Training", icon: Shield },
+  { id: "programs", title: "Programs", icon: Shield },
   { id: "books", title: "Books", icon: PenTool },
   { id: "achievements", title: "Awards", icon: Trophy },
   { id: "newsletter", title: "NewsLetter", icon: PenTool },
@@ -89,7 +90,7 @@ export function PortfolioSidebar() {
             {!isCollapsed && (
               <div>
                 <h3 className="font-bold text-lg text-sidebar-foreground">Suneeta Modekurty</h3>
-                <p className="text-sm text-sidebar-foreground/70">Pioneering Quantitative AI Governance</p>
+                <p className="text-sm text-sidebar-foreground/70">AI Consultant | AI Governance & Responsible Innovation</p>
               </div>
             )}
           </div>
@@ -135,6 +136,7 @@ export function PortfolioSidebar() {
                   variant="ghost"
                   size="icon"
                   className="w-8 h-8 hover:bg-sidebar-accent text-sidebar-foreground"
+                  onClick={() => window.open('https://www.linkedin.com/in/smodekurty', '_blank')}
                 >
                   <Linkedin className="w-4 h-4" />
                 </Button>
@@ -142,8 +144,17 @@ export function PortfolioSidebar() {
                   variant="ghost"
                   size="icon"
                   className="w-8 h-8 hover:bg-sidebar-accent text-sidebar-foreground"
+                  onClick={() => window.open('https://github.com/sanjeevaniai', '_blank')}
                 >
                   <Github className="w-4 h-4" />
+                </Button>
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="w-8 h-8 hover:bg-sidebar-accent text-sidebar-foreground"
+                  onClick={() => window.open('https://x.com/sanjeevaniai', '_blank')}
+                >
+                  <span className="w-4 h-4 font-bold text-xs flex items-center justify-center">𝕏</span>
                 </Button>
                 <Button
                   variant="ghost"
