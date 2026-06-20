@@ -32,7 +32,7 @@ const HowIHelpSection = () => {
           <p className="text-sm uppercase tracking-[0.25em] text-primary font-semibold mb-4">
             Advisory &amp; consulting
           </p>
-          <h2 className="text-gradient mb-4">I de-risk your AI — quantitatively.</h2>
+          <h2 className="text-gradient mb-4">I de-risk your AI — quantitatively</h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             I provide AI risk advisory and consulting to regulated organizations: measuring where
             your AI risk sits, advising your leadership, and building governance that's defensible.

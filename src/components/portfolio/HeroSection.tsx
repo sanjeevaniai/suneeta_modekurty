@@ -43,11 +43,11 @@ const HeroSection = () => {
             </div>
             {/* Punchy headline */}
             <div className="block text-2xl md:text-4xl font-bold text-foreground mb-6 max-w-4xl mx-auto leading-tight">
-              Quantify your AI risk before regulators, auditors, or the board ask you to.
+              Quantify your AI risk before regulators, auditors, or the board ask you to
             </div>
             {/* Positioning line */}
             <div className="block text-lg md:text-xl text-muted-foreground mb-6 max-w-3xl mx-auto leading-relaxed">
-              I turn "is our AI safe?" into a defensible number — for regulated organizations that can't afford to get it wrong.
+              I turn "is our AI safe?" into a defensible number — for regulated organizations that can't afford to get it wrong
             </div>
             {/* Proof line — O-1A first */}
             <div className="block text-base md:text-lg text-muted-foreground/80 max-w-3xl mx-auto">
