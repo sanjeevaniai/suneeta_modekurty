@@ -10,21 +10,27 @@ import Letter from "./pages/Letter";
 
 const queryClient = new QueryClient();
 
-const App = () => (
+// Providers + routes WITHOUT a router, so the same tree can be wrapped in
+// BrowserRouter (client) or StaticRouter (build-time prerender).
+export const AppInner = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/foryou-from-mamma" element={<Letter />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Index />} />
+        <Route path="/foryou-from-mamma" element={<Letter />} />
+        {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     </TooltipProvider>
   </QueryClientProvider>
+);
+
+const App = () => (
+  <BrowserRouter>
+    <AppInner />
+  </BrowserRouter>
 );
 
 export default App;
