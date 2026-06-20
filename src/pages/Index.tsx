@@ -3,18 +3,17 @@ import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { PortfolioSidebar } from "@/components/portfolio/PortfolioSidebar";
 import HeroSection from "@/components/portfolio/HeroSection";
+import ProblemSection from "@/components/portfolio/ProblemSection";
+import HowIHelpSection from "@/components/portfolio/HowIHelpSection";
+import CredentialsSection from "@/components/portfolio/CredentialsSection";
+import EventsSection from "@/components/portfolio/EventsSection";
 import AboutSection from "@/components/portfolio/AboutSection";
-import JourneySection from "@/components/portfolio/JourneySection";
-import ExperienceSection from "@/components/portfolio/ExperienceSection";
-import EducationSection from "@/components/portfolio/EducationSection";
-import CertificationsSection from "@/components/portfolio/CertificationsSection";
-import ProjectsSection from "@/components/portfolio/ProjectsSection";
-import PublicationsSection from "@/components/portfolio/PublicationsSection";
-import ProgramsSection from "@/components/portfolio/ProgramsSection";
-import BooksSection from "@/components/portfolio/BooksSection";
-import AchievementsSection from "@/components/portfolio/AchievementsSection";
-import BlogSection from "@/components/portfolio/BlogSection";
 import Footer from "@/components/portfolio/Footer";
+
+// --- Deferred to v2 (files kept on disk, intentionally unmounted) ---
+// JourneySection, ExperienceSection, EducationSection, CertificationsSection,
+// ProjectsSection, PublicationsSection, ProgramsSection, BooksSection,
+// AchievementsSection, BlogSection — these return in a deeper "More" area later.
 
 
 const Index = () => {
@@ -57,17 +56,16 @@ const Index = () => {
           </div>
 
           <HeroSection />
+          <ProblemSection />
+
+          {/* v2 SLOT — named framework block goes here (above "How I Help"). Intentionally empty for now.
+              This is where the productized "AI Risk Baseline Assessment" (deliverables + timeframe)
+              returns once the validation conversations show what the assessment should actually be. */}
+
+          <HowIHelpSection />
+          <CredentialsSection />
+          <EventsSection />
           <AboutSection />
-          <JourneySection />
-          <ExperienceSection />
-          <EducationSection />
-          <CertificationsSection />
-          <ProjectsSection />
-          <PublicationsSection />
-          <ProgramsSection />
-          <BooksSection />
-          <AchievementsSection />
-          <BlogSection />
           <Footer />
         </main>
       </div>

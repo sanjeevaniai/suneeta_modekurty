@@ -1,20 +1,14 @@
 import { useState, useEffect } from "react";
 import {
   User,
-  MapPin,
   Briefcase,
-  GraduationCap,
   Award,
-  BookOpen,
-  FileText,
-  Trophy,
-  PenTool,
   Mail,
   Linkedin,
   Github,
-  Twitter,
   Home,
-  Shield
+  AlertCircle,
+  Mic
 } from "lucide-react";
 import smLogo from "@/assets/sm-logo.png";
 
@@ -35,17 +29,12 @@ import { Separator } from "@/components/ui/separator";
 
 const portfolioSections = [
   { id: "hero", title: "Home", icon: Home },
+  { id: "problem", title: "The Problem", icon: AlertCircle },
+  { id: "how-i-help", title: "How I Help", icon: Briefcase },
+  { id: "credentials", title: "Credentials", icon: Award },
+  { id: "events", title: "Speaking", icon: Mic },
   { id: "about", title: "About", icon: User },
-  { id: "journey", title: "Journey", icon: MapPin },
-  { id: "experience", title: "Experience", icon: Briefcase },
-  { id: "education", title: "Education", icon: GraduationCap },
-  { id: "certifications", title: "Certifications", icon: Award },
-  { id: "projects", title: "Projects", icon: BookOpen },
-  { id: "publications", title: "Publications", icon: FileText },
-  { id: "programs", title: "Programs", icon: Shield },
-  { id: "books", title: "Books", icon: PenTool },
-  { id: "achievements", title: "Awards", icon: Trophy },
-  { id: "newsletter", title: "NewsLetter", icon: PenTool },
+  { id: "contact", title: "Get in Touch", icon: Mail },
 ];
 
 export function PortfolioSidebar() {
@@ -90,7 +79,7 @@ export function PortfolioSidebar() {
             {!isCollapsed && (
               <div>
                 <h3 className="font-bold text-lg text-sidebar-foreground">Suneeta Modekurty</h3>
-                <p className="text-sm text-sidebar-foreground/70">AI Consultant | AI Governance & Responsible Innovation</p>
+                <p className="text-sm text-sidebar-foreground/70">Quantifying AI Risk</p>
               </div>
             )}
           </div>

@@ -27,7 +27,7 @@
     --radius: 0.75rem;
 
     /* Gradient building blocks */
-    --grad-magenta: linear-gradient(135deg, hsl(320 65% 25%), hsl(295 55% 35%));
+    --grad-magenta: linear-gradient(135deg, hsl(320 65% 25%), hsl(318 62% 22%));
     --grad-beige: linear-gradient(135deg, hsl(35 50% 75%), hsl(40 55% 80%));
     --grad-section-light: linear-gradient(135deg, hsl(45 25% 98%), hsl(45 20% 94%));
     --grad-section-dark: linear-gradient(135deg, hsl(320 25% 8%), hsl(320 20% 12%));

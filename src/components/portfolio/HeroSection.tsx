@@ -33,28 +33,40 @@ const HeroSection = () => {
           </div>
           
           <h1 className="mb-8 text-foreground font-light">
-            <SignatureAnimation 
-              text="Suneeta Modekurty" 
+            <SignatureAnimation
+              text="Suneeta Modekurty"
               className="block font-bold mb-4 signature-animation"
             />
-            <div className="block text-xl md:text-2xl text-muted-foreground mb-6 space-y-2">
-              <div>AI Consultant | LLM Fine-Tuning & RAG Systems | AI Governance & Responsible Innovation</div>
-              <div className="text-base md:text-lg text-muted-foreground/80">ISO 42001 Lead Auditor · Founder, <a href="https://sanjeevaniai.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">SANJEEVANI AI</a> · O-1A Visa Holder</div>
+            {/* Brand tag */}
+            <div className="block text-sm md:text-base uppercase tracking-[0.25em] text-primary font-semibold mb-6">
+              Quantifying AI Risk
+            </div>
+            {/* Punchy headline */}
+            <div className="block text-2xl md:text-4xl font-bold text-foreground mb-6 max-w-4xl mx-auto leading-tight">
+              Quantify your AI risk before regulators, auditors, or the board ask you to.
+            </div>
+            {/* Positioning line */}
+            <div className="block text-lg md:text-xl text-muted-foreground mb-6 max-w-3xl mx-auto leading-relaxed">
+              I turn "is our AI safe?" into a defensible number — for regulated organizations that can't afford to get it wrong.
+            </div>
+            {/* Proof line — O-1A first */}
+            <div className="block text-base md:text-lg text-muted-foreground/80 max-w-3xl mx-auto">
+              O-1A visa for extraordinary ability in AI, data science &amp; bioinformatics · ISO 42001 Lead Auditor · Master's in Bioinformatics · O'Reilly instructor
             </div>
           </h1>
-          
+
           <div className="flex justify-center">
             <Button
               size="lg"
               variant="default"
-              onClick={() => window.open('https://sanjeevaniai.com', '_blank')}
+              onClick={() => window.open('https://calendar.notion.so/meet/siaai/0619', '_blank')}
               className="group"
             >
-              Learn. Understand. Evaluate. Embrace. Score. Monitor. Repeat.
+              Book a Call
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
-          
+
         </div>
 
       </div>
