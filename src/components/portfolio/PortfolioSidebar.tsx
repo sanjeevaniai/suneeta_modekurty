@@ -32,7 +32,7 @@ const portfolioSections = [
   { id: "problem", title: "The Problem", icon: AlertCircle },
   { id: "how-i-help", title: "How I Help", icon: Briefcase },
   { id: "credentials", title: "Credentials", icon: Award },
-  { id: "events", title: "Speaking", icon: Mic },
+  { id: "events", title: "Events", icon: Mic },
   { id: "about", title: "About", icon: User },
   { id: "contact", title: "Get in Touch", icon: Mail },
 ];
