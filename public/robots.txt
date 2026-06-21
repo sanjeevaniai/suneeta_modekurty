@@ -30,4 +30,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://suneetamodekurty.com/sitemap.xml
+Sitemap: https://www.suneetamodekurty.com/sitemap.xml
