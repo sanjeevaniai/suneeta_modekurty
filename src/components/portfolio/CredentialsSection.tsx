@@ -52,7 +52,7 @@ const CredentialsSection = () => {
           <p className="text-sm uppercase tracking-[0.25em] text-primary font-semibold mb-4">
             Why me
           </p>
-          <h2 className="text-gradient mb-4">Credentials a CIO can't easily hire</h2>
+          <h2 className="text-gradient-animated mb-4">You've hired people to build your AI, audit it, and train your team. None of them are measuring whether it's actually safe. That's the gap I exist in.</h2>
         </div>
 
         {/* Tier 1 — gold accent border */}

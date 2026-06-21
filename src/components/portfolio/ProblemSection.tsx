@@ -16,7 +16,7 @@ const ProblemSection = () => {
           <p className="text-sm uppercase tracking-[0.25em] text-primary font-semibold mb-4">
             For leaders accountable for AI
           </p>
-          <h2 className="text-gradient mb-4">
+          <h2 className="text-gradient-animated mb-4">
             Everyone's "de-risking AI." Can anyone tell you your actual risk — measured?
           </h2>
         </div>

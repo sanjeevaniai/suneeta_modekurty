@@ -12,7 +12,7 @@ const EventsSection = () => {
           <p className="text-sm uppercase tracking-[0.25em] text-primary font-semibold mb-4">
             Events
           </p>
-          <h2 className="text-gradient mb-4">Speaking &amp; Training</h2>
+          <h2 className="text-gradient-animated mb-4">Speaking &amp; Training</h2>
         </div>
 
         {/* Chronological, newest first */}

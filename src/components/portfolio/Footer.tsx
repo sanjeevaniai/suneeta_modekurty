@@ -9,8 +9,8 @@ const Footer = () => {
     <footer id="contact" className="bg-primary text-primary-foreground hero-gradient">
       <div className="max-w-4xl mx-auto px-6 py-24 text-center">
         {/* Final CTA */}
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">
-          Let's measure what your AI risk actually is
+        <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gradient-animated-light">
+          Let's measure what your AI risk actually is making it, mitigate it, and prove you did, before regulators, auditors, or the board ask
         </h2>
         <p className="text-lg md:text-xl opacity-90 max-w-2xl mx-auto mb-10">
           If you're accountable for AI in a regulated organization, the first conversation is free —

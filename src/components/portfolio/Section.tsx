@@ -22,7 +22,7 @@ const Section = ({ id, title, subtitle, children, className, background = "defau
     >
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-gradient mb-4">{title}</h2>
+          <h2 className="text-gradient-animated mb-4">{title}</h2>
           {subtitle && (
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               {subtitle}
