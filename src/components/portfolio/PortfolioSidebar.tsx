@@ -43,21 +43,34 @@ export function PortfolioSidebar() {
   const isCollapsed = state === "collapsed";
 
   useEffect(() => {
+    // The page scrolls inside the <main> container, not the window, so track
+    // active section via each section's position relative to the viewport.
+    const offset = 120; // px from the top that counts as "active"
+    let raf = 0;
     const handleScroll = () => {
-      const sections = portfolioSections.map(item => document.getElementById(item.id));
-      const scrollPosition = window.scrollY + 100;
-
-      for (let i = sections.length - 1; i >= 0; i--) {
-        const section = sections[i];
-        if (section && section.offsetTop <= scrollPosition) {
-          setActiveSection(portfolioSections[i].id);
-          break;
+      raf = 0;
+      let current = portfolioSections[0]?.id;
+      for (const item of portfolioSections) {
+        const el = document.getElementById(item.id);
+        if (el && el.getBoundingClientRect().top <= offset) {
+          current = item.id;
         }
       }
+      if (current) setActiveSection(current);
+    };
+    const onScroll = () => {
+      if (!raf) raf = requestAnimationFrame(handleScroll);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    handleScroll();
+    // capture:true so this also catches scroll from the inner <main> scroller.
+    window.addEventListener('scroll', onScroll, { passive: true, capture: true });
+    window.addEventListener('resize', onScroll);
+    return () => {
+      window.removeEventListener('scroll', onScroll, { capture: true } as EventListenerOptions);
+      window.removeEventListener('resize', onScroll);
+      cancelAnimationFrame(raf);
+    };
   }, []);
 
   const scrollToSection = (sectionId: string) => {

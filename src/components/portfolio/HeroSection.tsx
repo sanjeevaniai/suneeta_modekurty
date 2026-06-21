@@ -42,8 +42,8 @@ const HeroSection = () => {
               Quantifying AI Risk
             </div>
             {/* Punchy headline */}
-            <div className="block text-2xl md:text-4xl font-bold text-foreground mb-6 max-w-4xl mx-auto leading-tight">
-              Quantify your AI risk before regulators, auditors, or the board ask you to
+            <div className="block text-2xl md:text-4xl font-bold text-gradient-animated mb-6 max-w-4xl mx-auto leading-tight">
+              Measure your AI risk, mitigate it, and prove you did, before regulators, auditors, or the board ask
             </div>
             {/* Positioning line */}
             <div className="block text-lg md:text-xl text-muted-foreground mb-6 max-w-3xl mx-auto leading-relaxed">
