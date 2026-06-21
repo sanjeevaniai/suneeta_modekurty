@@ -2,6 +2,7 @@ import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import { PortfolioSidebar } from "@/components/portfolio/PortfolioSidebar";
+import Reveal from "@/components/portfolio/Reveal";
 import HeroSection from "@/components/portfolio/HeroSection";
 import ProblemSection from "@/components/portfolio/ProblemSection";
 import HowIHelpSection from "@/components/portfolio/HowIHelpSection";
@@ -23,7 +24,7 @@ const Index = () => {
         <PortfolioSidebar />
 
         {/* Main Content */}
-        <main className="flex-1 overflow-y-auto">
+        <main className="flex-1 overflow-y-auto overflow-x-hidden">
           {/* Sidebar Toggle - Mobile */}
           <div className="fixed top-4 left-4 z-50 lg:hidden">
             <SidebarTrigger className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg w-12 h-12 rounded-full flex items-center justify-center">
@@ -56,17 +57,17 @@ const Index = () => {
           </div>
 
           <HeroSection />
-          <ProblemSection />
+          <Reveal><ProblemSection /></Reveal>
 
           {/* v2 SLOT — named framework block goes here (above "How I Help"). Intentionally empty for now.
               This is where the productized "AI Risk Baseline Assessment" (deliverables + timeframe)
               returns once the validation conversations show what the assessment should actually be. */}
 
-          <HowIHelpSection />
-          <CredentialsSection />
-          <EventsSection />
-          <AboutSection />
-          <Footer />
+          <Reveal><HowIHelpSection /></Reveal>
+          <Reveal><CredentialsSection /></Reveal>
+          <Reveal><EventsSection /></Reveal>
+          <Reveal><AboutSection /></Reveal>
+          <Reveal><Footer /></Reveal>
         </main>
       </div>
     </SidebarProvider>
