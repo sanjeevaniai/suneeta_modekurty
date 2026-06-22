@@ -32,28 +32,33 @@ const HeroSection = () => {
             </Avatar>
           </div>
           
-          <h1 className="mb-8 text-foreground font-light">
+          <div className="mb-8 text-foreground font-light">
+            {/* Name */}
             <SignatureAnimation
               text="Suneeta Modekurty"
               className="block font-bold mb-4 signature-animation"
             />
-            {/* Brand tag */}
-            <div className="block text-sm md:text-base uppercase tracking-[0.25em] text-primary font-semibold mb-6">
-              Quantifying AI Risk
-            </div>
-            {/* Punchy headline */}
-            <div className="block text-2xl md:text-4xl font-bold text-gradient-animated mb-6 max-w-4xl mx-auto leading-tight">
+            {/* Eyebrow */}
+            <p className="block text-sm md:text-base uppercase tracking-[0.25em] text-primary font-semibold mb-6">
+              AI Governance Advisor
+            </p>
+            {/* The single H1 */}
+            <h1 className="block text-3xl md:text-5xl font-bold text-gradient-animated mb-6 max-w-4xl mx-auto leading-tight">
+              Quantifying AI Risk — so leaders can trust what their AI tells them.
+            </h1>
+            {/* Sub-headline */}
+            <p className="block text-xl md:text-2xl font-semibold text-foreground mb-6 max-w-4xl mx-auto leading-tight">
               Measure your AI risk, mitigate it, and prove you did, before regulators, auditors, or the board ask
-            </div>
+            </p>
             {/* Positioning line */}
-            <div className="block text-lg md:text-xl text-muted-foreground mb-6 max-w-3xl mx-auto leading-relaxed">
+            <p className="block text-lg md:text-xl text-muted-foreground mb-6 max-w-3xl mx-auto leading-relaxed">
               I turn "is our AI safe?" into a defensible number — for regulated organizations that can't afford to get it wrong
-            </div>
+            </p>
             {/* Proof line — O-1A first */}
-            <div className="block text-base md:text-lg text-muted-foreground/80 max-w-3xl mx-auto">
+            <p className="block text-base md:text-lg text-muted-foreground/80 max-w-3xl mx-auto">
               O-1A visa for extraordinary ability in AI, data science &amp; bioinformatics · ISO 42001 Lead Auditor · Master's in Bioinformatics · O'Reilly instructor
-            </div>
-          </h1>
+            </p>
+          </div>
 
           <div className="flex justify-center">
             <Button
