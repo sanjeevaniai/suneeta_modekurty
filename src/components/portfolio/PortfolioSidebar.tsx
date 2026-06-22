@@ -45,14 +45,17 @@ export function PortfolioSidebar() {
   useEffect(() => {
     // The page scrolls inside the <main> container, not the window, so track
     // active section via each section's position relative to the viewport.
-    const offset = 120; // px from the top that counts as "active"
     let raf = 0;
     const handleScroll = () => {
       raf = 0;
+      // A section becomes "active" once its top scrolls above this line
+      // (~40% down the viewport) — i.e., when it dominates the upper half of
+      // the screen — rather than only when its very top reaches the top edge.
+      const line = (window.innerHeight || document.documentElement.clientHeight) * 0.4;
       let current = portfolioSections[0]?.id;
       for (const item of portfolioSections) {
         const el = document.getElementById(item.id);
-        if (el && el.getBoundingClientRect().top <= offset) {
+        if (el && el.getBoundingClientRect().top <= line) {
           current = item.id;
         }
       }
