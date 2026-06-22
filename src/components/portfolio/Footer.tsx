@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Mail, Linkedin, Github, Twitter, ArrowRight } from "lucide-react";
+import { Mail, Linkedin, Github, Twitter, BookOpen, ArrowRight } from "lucide-react";
 
 const BOOKING_URL = "https://calendar.notion.so/meet/siaai/0619";
+const LINKEDIN_URL = "https://www.linkedin.com/in/smodekurty";
+const AINSTEIN_URL = "https://ainstein.sanjeevaniai.com";
 
 const Footer = () => {
   return (
@@ -27,35 +29,54 @@ const Footer = () => {
           <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
         </Button>
 
-        {/* Social links */}
-        <div className="flex justify-center gap-4 mt-12">
-          <Button
-            variant="ghost-hero"
-            size="icon"
-            onClick={() => window.open("https://www.linkedin.com/in/smodekurty/", "_blank")}
+        {/* Connect — descriptive, crawlable text links */}
+        <p className="text-base md:text-lg opacity-90 mt-12">
+          Connect on{" "}
+          <a
+            href={LINKEDIN_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold underline underline-offset-4 hover:opacity-100"
           >
-            <Linkedin className="w-5 h-5" />
+            LinkedIn
+          </a>{" "}
+          · Read my newsletter,{" "}
+          <a
+            href={AINSTEIN_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold underline underline-offset-4 hover:opacity-100"
+          >
+            A.I.N.S.T.E.I.N.
+          </a>
+        </p>
+
+        {/* Social links — real anchors (crawlable) */}
+        <div className="flex justify-center gap-4 mt-6">
+          <Button asChild variant="ghost-hero" size="icon">
+            <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer" aria-label="Suneeta Modekurty on LinkedIn">
+              <Linkedin className="w-5 h-5" />
+            </a>
           </Button>
-          <Button
-            variant="ghost-hero"
-            size="icon"
-            onClick={() => window.open("https://github.com/sanjeevaniai", "_blank")}
-          >
-            <Github className="w-5 h-5" />
+          <Button asChild variant="ghost-hero" size="icon">
+            <a href={AINSTEIN_URL} target="_blank" rel="noopener noreferrer" aria-label="A.I.N.S.T.E.I.N. newsletter">
+              <BookOpen className="w-5 h-5" />
+            </a>
           </Button>
-          <Button
-            variant="ghost-hero"
-            size="icon"
-            onClick={() => window.open("https://x.com/sanjeevaniai", "_blank")}
-          >
-            <Twitter className="w-5 h-5" />
+          <Button asChild variant="ghost-hero" size="icon">
+            <a href="https://github.com/sanjeevaniai" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <Github className="w-5 h-5" />
+            </a>
           </Button>
-          <Button
-            variant="ghost-hero"
-            size="icon"
-            onClick={() => window.open("mailto:suneeta@sanjeevaniai.com", "_blank")}
-          >
-            <Mail className="w-5 h-5" />
+          <Button asChild variant="ghost-hero" size="icon">
+            <a href="https://x.com/sanjeevaniai" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+              <Twitter className="w-5 h-5" />
+            </a>
+          </Button>
+          <Button asChild variant="ghost-hero" size="icon">
+            <a href="mailto:suneeta@sanjeevaniai.com" aria-label="Email Suneeta Modekurty">
+              <Mail className="w-5 h-5" />
+            </a>
           </Button>
         </div>
 
